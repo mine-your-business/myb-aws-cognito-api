@@ -1,16 +1,17 @@
 import boto3
 
+
 class AwsCognitoApi:
 
     def __init__(
-            self, 
+            self,
             access_key=None,
-            secret_key=None, 
+            secret_key=None,
             region_name=None,
             verbose=False
-    ):        
+    ):
         self._client = boto3.client(
-            'cognito-idp',     
+            'cognito-idp',
             aws_access_key_id=access_key,
             aws_secret_access_key=secret_key,
             region_name=region_name
@@ -32,5 +33,5 @@ class AwsCognitoApi:
             auth_result = auth_response['AuthenticationResult']
         if auth_result:
             return auth_result['AccessToken']
-            
+
         return ""
