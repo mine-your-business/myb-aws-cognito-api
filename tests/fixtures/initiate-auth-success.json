@@ -1,0 +1,10 @@
+{
+  "ChallengeParameters": {},
+  "AuthenticationResult": {
+    "AccessToken": "eyJraWQiOiJleGFtcGxlIn0.access-token-placeholder.signature",
+    "ExpiresIn": 3600,
+    "TokenType": "Bearer",
+    "RefreshToken": "refresh-token-placeholder",
+    "IdToken": "eyJraWQiOiJleGFtcGxlIn0.id-token-placeholder.signature"
+  }
+}

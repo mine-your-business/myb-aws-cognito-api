@@ -1,0 +1,5 @@
+{
+  "Code": "NotAuthorizedException",
+  "Message": "Incorrect username or password.",
+  "HTTPStatusCode": 400
+}

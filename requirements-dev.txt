@@ -1,0 +1,5 @@
+-r requirements.txt
+# Dev tools are pinned exactly so the lint/test gate only moves on a deliberate (Dependabot) bump.
+build==1.6.1
+flake8==7.4.1
+pytest==9.1.1
