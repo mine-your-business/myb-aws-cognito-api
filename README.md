@@ -2,7 +2,7 @@
 
 A small Python client for the AWS Cognito Identity Provider API, built on `boto3`.
 
-Requires Python 3.10 or newer.
+Requires Python 3.11 or newer.
 
 ## Installation
 
@@ -61,7 +61,7 @@ The tests are offline. They use `botocore.stub.Stubber` to intercept Cognito cal
 the request and response payloads they assert against live in
 [`tests/fixtures/`](tests/fixtures). No AWS credentials are needed.
 
-CI runs lint, tests and a package build on Python 3.10 through 3.13 for every pull
+CI runs lint, tests and a package build on Python 3.11 through 3.14 for every pull
 request and push to `main`. Dependabot opens weekly update PRs for pip dependencies and
 GitHub Actions.
 
