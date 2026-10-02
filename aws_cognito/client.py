@@ -28,9 +28,8 @@ class AwsCognitoApi:
             ClientId=client_id
         )
 
-        auth_result = None
-        if auth_response:
-            auth_result = auth_response['AuthenticationResult']
+        # A challenge response (e.g. NEW_PASSWORD_REQUIRED) has no AuthenticationResult.
+        auth_result = auth_response.get('AuthenticationResult') if auth_response else None
         if auth_result:
             return auth_result['AccessToken']
 
