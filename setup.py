@@ -18,7 +18,7 @@ setup(
     long_description_content_type='text/markdown',
     install_requires=[
         'boto3==1.17.2',
-        'requests==2.22.0'
+        'requests==2.33.0'
     ],
     url='https://github.com/mine-your-business/myb-aws-cognito-api',
     python_requires='>=3.7',

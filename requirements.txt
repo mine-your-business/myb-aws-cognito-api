@@ -2,4 +2,4 @@
 boto3==1.17.2
 
 # Using a later version of requests may break boto3 but it is not certain
-requests==2.22.0
+requests==2.33.0
